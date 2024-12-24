@@ -1,327 +1,327 @@
 /* Cấu hình nền trang */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #D32F2F;
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    background-position: center; /* Căn giữa hình nền */
-  }
-  
-  /* Container chính */
-  .container {
-    margin-top: 50px;
-    padding: 20px;
-    z-index: 10;
-    position: relative;    
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    background-position: center; /* Căn giữa hình nền */
-  }
+  font-family: Arial, sans-serif;
+  background-color: #D32F2F;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background-position: center; /* Căn giữa hình nền */
+}
+
+/* Container chính */
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  z-index: 10;
+  position: relative;    
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background-position: center; /* Căn giữa hình nền */
+}
 /* Hình ảnh Noel */
 .noel-image {
-    width: 150px;
-    height: auto;
-    margin: px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Hộp quà */
-  #giftBox {
-    margin-top: 20px;
+  width: 150px;
+  height: auto;
+  margin: px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    font-size: 50px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Hộp quà */
+#giftBox {
+  margin-top: 20px;
 
-  }
-  
-  /* Biểu tượng trang trí ngẫu nhiên */
-  .decoration {
-    position: absolute;
-    font-size: 30px;
-    animation: float 5s ease-in-out infinite alternate;
-  }
-  
-  /* Hiệu ứng nổi nhẹ cho biểu tượng */
-  @keyframes float {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(10px); }
-  }
-  
-  /* Dây đèn nhấp nháy */
-  .lights span {
-    position: absolute;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    animation: blink 1.5s infinite alternate;
-  }
+  font-size: 50px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-  
-  
-  @keyframes blink {
-    0% { opacity: 1; }
-    100% { opacity: 0.3; }
+}
+
+/* Biểu tượng trang trí ngẫu nhiên */
+.decoration {
+  position: absolute;
+  font-size: 30px;
+  animation: float 5s ease-in-out infinite alternate;
+}
+
+/* Hiệu ứng nổi nhẹ cho biểu tượng */
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+
+/* Dây đèn nhấp nháy */
+.lights span {
+  position: absolute;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: blink 1.5s infinite alternate;
+}
+
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+/* Tuyết rơi */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background: #fff;
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
   }
-  
-  /* Tuyết rơi */
-  .snowflake {
-    position: absolute;
-    top: -10px;
-    background: #fff;
-    border-radius: 50%;
-    animation: fall linear infinite;
-  }
-  
-  @keyframes fall {
-    to {
-      transform: translateY(100vh);
-    }
-  }
+}
 
 /* Ẩn iframe nhưng vẫn cho phép nhạc phát */
 iframe {
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-  
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 /* Gấu bông dưới lời chúc */
 .teddy-container {
-    margin-top: 20px;
-    text-align: center; /* Căn giữa gấu bông */
-    position: relative;
-  }
-  
-  .teddy {
-    font-size: 100px;
-    display: inline-block;
-    position: relative;
-    animation: bounce 2s infinite alternate;
-    cursor: pointer;
-  }
-  
-  /* Hiệu ứng nảy của gấu bông */
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-20px);
-    }
-  }
-  
-  /* Trái tim bắn ra từ gấu bông */
-  .heart {
-    position: absolute;
-    bottom: 50px; /* Bắt đầu từ giữa gấu bông */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 30px;
-    color: red;
-    animation: floatHeart 2s ease-out forwards;
-    pointer-events: none; /* Không gây cản trở click */
-  }
-  
-  /* Hiệu ứng bay của trái tim */
-  @keyframes floatHeart {
-    0% {
-      transform: translate(-50%, 0) scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: translate(-50%, -150px) scale(1.5);
-      opacity: 0;
-    }
-  }
+  margin-top: 20px;
+  text-align: center; /* Căn giữa gấu bông */
+  position: relative;
+}
 
-  /* GIF món quà */
+.teddy {
+  font-size: 100px;
+  display: inline-block;
+  position: relative;
+  animation: bounce 2s infinite alternate;
+  cursor: pointer;
+}
+
+/* Hiệu ứng nảy của gấu bông */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Trái tim bắn ra từ gấu bông */
+.heart {
+  position: absolute;
+  bottom: 50px; /* Bắt đầu từ giữa gấu bông */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: red;
+  animation: floatHeart 2s ease-out forwards;
+  pointer-events: none; /* Không gây cản trở click */
+}
+
+/* Hiệu ứng bay của trái tim */
+@keyframes floatHeart {
+  0% {
+    transform: translate(-50%, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -150px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* GIF món quà */
 .gift-gif {
-    display: block;
-    margin: 20px auto;
-    width: 300px;
-    max-width: 100%;
-    border-radius: 10px;
-    cursor: pointer; /* Hiển thị con trỏ khi rê chuột vào */
-    animation: pop-in 1.5s ease-out;
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer; /* Hiển thị con trỏ khi rê chuột vào */
+  animation: pop-in 1.5s ease-out;
+}
+
+/* Hình ảnh sau khi click */
+.hidden-image {
+  display: block;
+  margin: 1px auto;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fade-in 1.5s ease-out;
+}
+
+/* Animation xuất hiện */
+@keyframes pop-in {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
   }
-  
-  /* Hình ảnh sau khi click */
-  .hidden-image {
-    display: block;
-    margin: 1px auto;
-    width: 400px;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fade-in 1.5s ease-out;
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
-  
-  /* Animation xuất hiện */
-  @keyframes pop-in {
-    0% {
-      transform: scale(0.5);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
   }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  /* Ẩn phần tử */
-  .hidden {
-    display: none;
-  }
-  
-  
+}
+
+/* Ẩn phần tử */
+.hidden {
+  display: none;
+}
+
+
 /* Dòng chữ chỉ vào GIF */
 #clickHint {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 10px;
-    color: white;
-    font-weight: bold;
-    animation: bounce 1.5s infinite alternate;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  animation: bounce 1.5s infinite alternate;
+}
+
+/* Animation nhấp nháy cho mũi tên */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
-  
-  /* Animation nhấp nháy cho mũi tên */
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-5px);
-    }
+  100% {
+    transform: translateY(-5px);
   }
-  
-  /* Ẩn mặc định */
-  .hidden {
-    display: none;
-  }
-  
-  #backgroundMusic {
-    position: fixed;
-    z-index: -1;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+}
+
+/* Ẩn mặc định */
+.hidden {
+  display: none;
+}
+
+#backgroundMusic {
+  position: fixed;
+  z-index: -1;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 /* --------- Mobile --------- */
 @media (max-width: 767px) {
-  body {
-      font-size: 14px;
-      overflow-y: scroll; /* Cho phép cuộn trên điện thoại */
-  }
+body {
+    font-size: 14px;
+    overflow-y: scroll; /* Cho phép cuộn trên điện thoại */
+}
 
-  .container {
-      margin-top: 20px;
-      padding: 10px;
-  }
+.container {
+    margin-top: 20px;
+    padding: 10px;
+}
 
-  .noel-image {
-      width: 100px;
-  }
+.noel-image {
+    width: 100px;
+}
 
-  .gift-gif {
-      width: 200px;
-  }
+.gift-gif {
+    width: 200px;
+}
 
-  .hidden-image {
-      width: 250px;
-  }
+.hidden-image {
+    width: 250px;
+}
 
-  .teddy {
-      font-size: 60px;
-  }
+.teddy {
+    font-size: 60px;
+}
 
-  #clickHint {
-      font-size: 14px;
-  }
+#clickHint {
+    font-size: 14px;
+}
 }
 
 /* --------- Tablet --------- */
 @media (min-width: 768px) and (max-width: 1024px) {
-  body {
-      font-size: 16px;
-  }
+body {
+    font-size: 16px;
+}
 
-  .container {
-      margin-top: 30px;
-      padding: 15px;
-  }
+.container {
+    margin-top: 30px;
+    padding: 15px;
+}
 
-  .noel-image {
-      width: 120px;
-  }
+.noel-image {
+    width: 120px;
+}
 
-  .gift-gif {
-      width: 250px;
-  }
+.gift-gif {
+    width: 250px;
+}
 
-  .hidden-image {
-      width: 350px;
-  }
+.hidden-image {
+    width: 350px;
+}
 
-  .teddy {
-      font-size: 80px;
-  }
+.teddy {
+    font-size: 80px;
+}
 
-  #clickHint {
-      font-size: 16px;
-  }
+#clickHint {
+    font-size: 16px;
+}
 }
 
 /* --------- Desktop --------- */
 @media (min-width: 1025px) {
-  body {
-      font-size: 18px;
-  }
+body {
+    font-size: 18px;
+}
 
-  .container {
-      margin-top: 50px;
-      padding: 20px;
-  }
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
 
-  .noel-image {
-      width: 150px;
-  }
+.noel-image {
+    width: 150px;
+}
 
-  .gift-gif {
-      width: 300px;
-  }
+.gift-gif {
+    width: 300px;
+}
 
-  .hidden-image {
-      width: 400px;
-  }
+.hidden-image {
+    width: 400px;
+}
 
-  .teddy {
-      font-size: 100px;
-  }
+.teddy {
+    font-size: 100px;
+}
 
-  #clickHint {
-      font-size: 18px;
-  }
+#clickHint {
+    font-size: 18px;
+}
 }
