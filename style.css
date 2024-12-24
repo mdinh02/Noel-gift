@@ -229,3 +229,99 @@ iframe {
     width: 0;
     height: 0;
 }
+/* --------- Mobile --------- */
+@media (max-width: 767px) {
+  body {
+      font-size: 14px;
+      overflow-y: scroll; /* Cho phép cuộn trên điện thoại */
+  }
+
+  .container {
+      margin-top: 20px;
+      padding: 10px;
+  }
+
+  .noel-image {
+      width: 100px;
+  }
+
+  .gift-gif {
+      width: 200px;
+  }
+
+  .hidden-image {
+      width: 250px;
+  }
+
+  .teddy {
+      font-size: 60px;
+  }
+
+  #clickHint {
+      font-size: 14px;
+  }
+}
+
+/* --------- Tablet --------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+      font-size: 16px;
+  }
+
+  .container {
+      margin-top: 30px;
+      padding: 15px;
+  }
+
+  .noel-image {
+      width: 120px;
+  }
+
+  .gift-gif {
+      width: 250px;
+  }
+
+  .hidden-image {
+      width: 350px;
+  }
+
+  .teddy {
+      font-size: 80px;
+  }
+
+  #clickHint {
+      font-size: 16px;
+  }
+}
+
+/* --------- Desktop --------- */
+@media (min-width: 1025px) {
+  body {
+      font-size: 18px;
+  }
+
+  .container {
+      margin-top: 50px;
+      padding: 20px;
+  }
+
+  .noel-image {
+      width: 150px;
+  }
+
+  .gift-gif {
+      width: 300px;
+  }
+
+  .hidden-image {
+      width: 400px;
+  }
+
+  .teddy {
+      font-size: 100px;
+  }
+
+  #clickHint {
+      font-size: 18px;
+  }
+}
