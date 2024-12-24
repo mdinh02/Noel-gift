@@ -154,17 +154,4 @@ window.addEventListener('beforeunload', () => {
     sessionStorage.removeItem('musicSrc');
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const playMusicButton = document.getElementById('playMusicButton');
-    const musicIframe = document.getElementById('backgroundMusic');
-
-    if (playMusicButton && musicIframe) {
-        playMusicButton.addEventListener('click', () => {
-            musicIframe.src = 'https://www.youtube.com/embed/Ioxy-2_h8yQ?autoplay=1&loop=1&playlist=Ioxy-2_h8yQ&controls=0&mute=0';
-            playMusicButton.style.display = 'none'; // Ẩn nút sau khi nhạc phát
-        });
-    }
-});
-
-
 
